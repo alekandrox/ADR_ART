@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Web Artística</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            color: #000;
+        }
+        .navbar {
+            width: 100%;
+            background: #f8f8f8;
+            color: black;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            padding-left: 40px;
+            padding-right: 40px;
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+        }
+        .menu {
+            display: flex;
+            gap: 30px;
+        }
+        .menu a {
+            color: black;
+            text-decoration: none;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+        .menu a:hover {
+            color: gray;
+        }
+        .artist-name {
+            text-transform: uppercase;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+        .artist-name span {
+            display: block;
+            text-align: right;
+            width: 100%;
+        }
+        .artist-name span:first-child {
+            font-size: 32px;
+            font-weight: bold;
+            color: #555;
+        }
+        .artist-name span:last-child {
+            font-size: 32px;
+            font-weight: normal;
+            color: black;
+        }
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            padding-top: 60px;
+        }
+        .image-container img {
+            max-width: 80%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <nav class="menu">
+            <a href="#home">Inicio</a>
+            <a href="#obras">Obras</a>
+            <a href="#sobre">Sobre mí</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+        <div class="artist-name">
+            <span>ALEJANDRO</span>
+            <span>DÍEZ RODRÍGUEZ</span>
+        </div>
+    </div>
+    <div class="image-container">
+        <img src="https://drive.google.com/uc?export=view&id=0B-M8dn3tvRdAUnNPUUlyM2lGM2c" alt="Imagen principal">
+    </div>
+</body>
+</html>
